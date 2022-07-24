@@ -54,6 +54,7 @@ do
       --hostname "$(bashio::info.hostname)" \
       --advertise-exit-node \
       --accept-routes \
+      --snat-subnet-routes=false \
       --advertise-routes="${routes[*]}" \
       --advertise-tags="${tags}"
 
